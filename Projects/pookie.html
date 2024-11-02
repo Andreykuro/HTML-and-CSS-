@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dear Gem </title>
+    <style>
+        body {
+            background-color: #ffe6ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .confession-box {
+            background-color: #ffccff;
+            border-radius: 20px;
+            width: 80%;
+            margin: 20px auto;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            border: none;
+            border-bottom: 2px solid #ff69b4;
+            background-color: #ffccff;
+            padding: 5px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #ff69b4;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        button:hover {
+            background-color: #ff5f99;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dear Gem</h1>
+    <div class="confession-box">
+        <form action="/submit_confession" method="post">
+            <label for="name">Your Ideal Date:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="confession">Your Type:</label>
+            <input type="text" id="confession" name="confession" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
